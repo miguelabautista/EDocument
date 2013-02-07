@@ -1,3 +1,3 @@
-<h1>AjaxFlow '<i>Registro</i>' : page ${page}</h1>
+<h1>Registro</h1>
 <g:render template="common/tabs"/>
 <div class="content">

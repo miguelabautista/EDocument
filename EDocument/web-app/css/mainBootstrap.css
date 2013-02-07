@@ -65,9 +65,10 @@ src: url('../fonts/RobotoCondensed-Bold.ttf');
 }
 
 #menu{
-	color:red;
-	background-color:#ff23ee;
-	margin-top:100px;
+	position: relative;
+	left:-150px;
+	width:1000px;
+	top:-30px;
 }
 nav{
 	position: relative;
@@ -75,6 +76,12 @@ nav{
 }
 #clear{
 	clear:both;
+}
+
+#contenido{
+	margin-top:0;
+	margin-bottom: 0;
+	min-height: 420px; 
 }
 .bordeexterno{
 	background:#fff;
@@ -86,4 +93,25 @@ nav{
 .container-narrow{
 	padding-top: 20px;
 	padding-bottom: 40px;
+}
+footer{
+	position:relative;
+	background: #5097f3;
+	left: 0px;
+	bottom: 0px;
+	right:0px;
+	height:60px;	
+}
+
+footer > p{
+	text-align: center; 
+	color: #0000ff;
+	font-size:25px;
+}
+
+#userID{
+	background:red;
+	margin-top:0px;
+	text-align:right;
+	padding-right:5px;
 }

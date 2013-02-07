@@ -2,6 +2,7 @@
 <html>
 <head>
 <title><g:layoutTitle default="E-Document Cloud Service" /></title>
+<meta http-equiv="Content-Type" content="charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <link rel="stylesheet"
@@ -20,11 +21,17 @@
 <r:layoutResources />
 </head>
 <body>
-	<div class="bordeexterno">
-	<div class="container-narrow">
-	
-		<header class="masthead">
 
+	<div class="bordeexterno">
+		
+	<div class="container-narrow">
+		<div id="userID">
+		<sec:ifLoggedIn>
+			Bienvenido <sec:loggedInUserInfo field="username"/>			
+		</sec:ifLoggedIn>
+		</div>
+		<header class="masthead">
+			
 			<a title="Home" href="${createLink(uri:'/')}"><img
 				id="logoImagen" src="${resource(dir:'images',file:'logo.png') }" /></a>
 
@@ -42,21 +49,26 @@
 			</nav>
 
 		</header>
-		
-		
+				
 		<hr>
-		<div id="menuTem"></div>
-		<div class="jumbotron">
 
+		<div id="menuTem"></div>
+
+		<div id="contenido" class="jumbotron">
+
+			
 			<g:layoutBody />
 			<r:layoutResources />
 		</div>
+		
+	</div>
 
-		<hr>
 		<footer class="footer">
-			<p style="text-align: center; color: #0000ff;">Novatec</p>
+			</br>
+			<p>Novatec</p>
 		</footer>
+		
 	</div>
-	</div>
+
 </body>
 </html>

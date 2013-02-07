@@ -1,6 +1,6 @@
-<div id="menu" class="navbar navbar-fixed-top" style="display:none;">
+<div id="menu" class="navbar container">
 	<div class="navbar-inner">
-		<div class="container-narrow">
+		<div>
 			<div class="nav-collapse collapse">
 				<ul class="nav">
 					<li class="active"><a href="#">Informacion</a></li>

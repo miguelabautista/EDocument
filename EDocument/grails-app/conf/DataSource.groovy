@@ -1,8 +1,9 @@
 dataSource {
     pooled = true
     driverClassName = "com.mysql.jdbc.Driver"
-    username = "root"
-    password = "novatec123"
+    username = "adminRSDgl11"
+    password = "mZWkpzLv-Q6J"
+    //password = "novatec123"
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -15,7 +16,7 @@ environments {
         dataSource {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
           //  url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
-          url = "jdbc:mysql://localhost:3306/EDocument_Desa"
+          url = "jdbc:mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/EDocumentTest"
         }
     }
     test {
@@ -26,8 +27,8 @@ environments {
     }
     production {
         dataSource {
-            dbCreate = "update"
-            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            dbCreate = "create"
+            url = "jdbc:mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/EDocumentTest"
             pooled = true
             properties {
                maxActive = -1

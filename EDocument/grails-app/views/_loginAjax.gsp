@@ -4,7 +4,7 @@
 		<button type="button" class="close" data-dismiss="modal"
 			aria-hidden="true" onclick="cancelLogin();return false;">×</button>
 		<h3 id="myModalLabel">
-			<g:message code="springSecurity.login.header" />
+			Iniciar sesion
 		</h3>
 	</div>
 	<div id='login'>
@@ -45,9 +45,9 @@
 
 				<div class="">
 					<a id="loginButton" href='javascript:void(0)' class="btn btn-primary"
-						onclick='authAjax(); return false;'>Login</a> 
+						onclick='authAjax(); return false;'>Ingresar</a> 
 					<a href='javascript:void(0)' class="btn" data-dismiss="modal"
-						aria-hidden="true" onclick='cancelLogin(); return false;'>Cancel</a>
+						aria-hidden="true" onclick='cancelLogin(); return false;'>Cancelar</a>
 				</div>
 			</div>
 		</form>

@@ -66,7 +66,7 @@ grails.project.dependency.resolution = {
         compile ":cloud-foundry:1.2.3"
 
         // Uncomment these (or add new ones) to enable additional resources capabilities
-       // runtime ":zipped-resources:1.0"
+         runtime ":zipped-resources:1.0"
         //runtime ":cached-resources:1.0"
         //runtime ":yui-minify-resources:0.1.4"
 
@@ -75,5 +75,10 @@ grails.project.dependency.resolution = {
         runtime ":database-migration:1.2.1"
 
         compile ':cache:1.0.1'
+
+        //optinal plugins
+        compile ":quartz-monitor:0.3-RC1"
+        compile ":remote-pagination:0.4.1"
+        compile ":font-awesome-resources:3.0"
     }
 }

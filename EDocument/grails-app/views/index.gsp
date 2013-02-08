@@ -12,6 +12,7 @@
 //(function() {
 	//	document.forms['loginForm'].elements['j_username'].focus();
 	//})();
+
 function authAjax() {
 	$('#loginUpdate').html('Accediendo...');
     $.ajax({
@@ -41,7 +42,7 @@ function procesar(){
     $.get("${createLink(controller:'principal',action:'respuesta')}",function(data,status){
           	$('#cambio').html(data);  		
   	});
-    $("#userID").html('${render(template:"/cuenta")}');
+   
   	$("#botonOut").html('<g:link controller="logout">log out</g:link>');	
   
 }

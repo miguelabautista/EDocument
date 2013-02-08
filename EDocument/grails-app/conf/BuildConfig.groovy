@@ -36,6 +36,7 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
+        mavenRepo "http://maven.springframework.org/milestone/"
     }
 
     dependencies {
@@ -60,6 +61,9 @@ grails.project.dependency.resolution = {
         compile ":gwt:0.8"
         compile ':webflow:2.0.0', { exclude 'grails-webflow' }
         compile ":ajaxflow:0.2.4"
+
+
+        compile ":cloud-foundry:1.2.3"
 
         // Uncomment these (or add new ones) to enable additional resources capabilities
        // runtime ":zipped-resources:1.0"

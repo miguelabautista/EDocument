@@ -21,4 +21,8 @@ class Usuario extends User{
 		organizacion()
 		email email:true
 	}
+
+	String toString(){
+		"${nombre} ${apellido}"
+	}
 }

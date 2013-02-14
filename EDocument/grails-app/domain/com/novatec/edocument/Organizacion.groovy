@@ -19,4 +19,8 @@ class Organizacion {
 
     static constraints = {
     }
+
+    String toStrint(){
+    	nombre
+    }
 }

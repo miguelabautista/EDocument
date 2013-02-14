@@ -13,7 +13,10 @@
 //(function() {
 	//	document.forms['loginForm'].elements['j_username'].focus();
 	//})();
-	
+
+  $(".bordeexterno").height($(document).innerHeight());
+
+  	
 function showLogin(){
 	$("#mostrar").click();
 }

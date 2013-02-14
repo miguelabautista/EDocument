@@ -7,4 +7,8 @@ class Plan {
 
     static constraints = {
     }
+
+    String toString(){
+    	tipo
+    }
 }

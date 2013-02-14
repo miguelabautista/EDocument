@@ -3,9 +3,9 @@
 		<div>
 			<div class="nav-collapse collapse">
 				<ul class="nav">
-					<li><g:remoteLink controller="principal" action="informacion" on401="" onFailure="if (XMLHttpRequest.status==401) { showLogin(); }else{ console.log('otro'); }" update="cambio">Informacion</g:remoteLink></li>
-					<li><a href="#">Acerca</a></li>
-					<li><a href="#contact">Si o que</a></li>
+					<li><g:remoteLink controller="principal" action="informacion" onFailure="if (XMLHttpRequest.status==401) { showLogin(); }else{ console.log('otro'); }" update="cambio">Informacion</g:remoteLink></li>
+					<li><a href="#">Prueba</a></li>
+					<li><a href="#contact">Prueba</a></li>
 				</ul>
 			</div>			
 		</div>

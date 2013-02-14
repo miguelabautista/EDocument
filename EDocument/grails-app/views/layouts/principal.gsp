@@ -15,7 +15,7 @@
     <![endif]-->
 <link rel="shortcut icon"
 	href="${resource(dir:'images',file:'logo.png')}" />
-		<link rel="stylesheet" href="${resource(dir: 'css', file: 'registar.css')}"/>
+		<link rel="stylesheet" href="${resource(dir: 'css', file: 'Registro.css')}"/>
 
 <g:layoutHead />
 <r:layoutResources />

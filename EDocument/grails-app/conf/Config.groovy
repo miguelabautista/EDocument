@@ -100,5 +100,8 @@ grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.novatec.edoc
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.novatec.edocument.UserRole'
 grails.plugins.springsecurity.authority.className = 'com.novatec.edocument.Role'
 
+grails.plugins.springsecurity.auth.loginFormUrl = '/'
+grails.plugins.springsecurity.failureHandler.defaultFailureUrl = '/index'
+
 grails.plugin.cloudfoundry.username = 'miguel_angel_bautista@hotmail.com'
 grails.plugin.cloudfoundry.password = 'filan3001'

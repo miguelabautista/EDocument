@@ -16,6 +16,7 @@
 
   $(".bordeexterno").height($(document).innerHeight());
 
+  
   	
 function showLogin(){
 	$("#mostrar").click();

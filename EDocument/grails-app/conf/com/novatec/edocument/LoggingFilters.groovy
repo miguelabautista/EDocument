@@ -11,8 +11,9 @@ class LoggingFilters {
 				
             }
             after = { Map model ->
-				if(model && springSecurityService.isLoggedIn()){
+            	if(model && springSecurityService.isLoggedIn()){
 					model['user'] = Usuario.get(springSecurityService.principal.id)
+                   
 				}
             }
             afterView = { Exception e ->

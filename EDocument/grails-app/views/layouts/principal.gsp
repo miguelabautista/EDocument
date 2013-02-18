@@ -59,13 +59,12 @@
 			<r:layoutResources />
 		</div>
 		
+		<hr/>
+		<footer>
+			<p>novatec</p>
+		</footer>
 	</div>
 
-		<footer class="footer">
-			</br>
-			<p>Novatec</p>
-		</footer>
-		
 	</div>
 
 </body>

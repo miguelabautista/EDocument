@@ -14,11 +14,20 @@ class PrincipalController {
     }
 	
 	def informacion(){
-		println springSecurityService.principal.id
-		def lista = Usuario.list()
-		println lista.size()
+			
+		render template:"informacion"
+	}
+	def retornarDatos(){
+		def datos = params.tipo
+		
 		def usuario = Usuario.get(springSecurityService.principal.id)
-		println usuario
-		render template:"informacion" , model:[user:usuario]
+		if(datos == "organizacion"){
+		render template:"datosOrganizacion",model:[user:usuario]
+		}else if(datos == "cuenta"){
+			render template:"datosUsuario",model:[user:usuario]
+		}else if(datos == "plan"){
+
+		}
+
 	}
 }

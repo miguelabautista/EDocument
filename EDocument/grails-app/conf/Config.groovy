@@ -90,6 +90,14 @@ log4j = {
            'net.sf.ehcache.hibernate'
 }
 
+grails.resources.modules = {
+    overrides {
+    'jquery-theme' {
+      resource id:'theme', url:'/css/jqueryUI/jquery-ui.css'
+    }
+   }
+}
+
 grails.resources.adhoc.excludes = ['**/gwt/**']
 
 geoip.data.resource = "/WEB-INF/GeoLiteCity.dat"

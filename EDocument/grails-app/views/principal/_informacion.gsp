@@ -1,21 +1,24 @@
 <div>
-<g:render template="menu"/>
+	<g:render template="menu" />
+
 	
-	<div>${user?.nombre}</div>
-	<div>${user?.apellido}</div>
-	<div>${user?.cedula_rif}</div>
-	<div>${user?.email}</div>
-	<div>${user?.direccion}</div>
-	<div>${user?.telefono}</div>
-	<hr/>
-	<div>${user?.organizacion?.nombre}</div>
-	<div>${user?.organizacion?.rif}</div>
-	<div>${user?.organizacion?.direccion}</div>
-	<div>${user?.organizacion?.telefono}</div>
-	<div>${user?.organizacion?.email}</div>
-	<div>${user?.organizacion?.monto}</div>
-	<div>${user?.organizacion?.fechaPago}</div>
-	<div>${user?.organizacion?.vigencia}</div>
-	<div>${user?.organizacion?.dateCreated}</div>
-	<div>${user?.organizacion?.plan}</div>
-</div>
+
+	
+			<div id="menuVertical" class="btn-group">
+				
+						<button><g:remoteLink controller="principal"
+								action="retornarDatos" params="[tipo:'cuenta']"
+								update="cambioDatos" onFailure="if (XMLHttpRequest.status==401) { showLogin(); }else{ console.log('otro'); }">Cuenta</g:remoteLink></button>
+						<button><g:remoteLink
+								controller="principal" action="retornarDatos"
+								params="[tipo:'organizacion']" update="cambioDatos" >Organizacion</g:remoteLink></button>
+						<button><g:remoteLink controller="principal"
+								action="retornarDatos" params="[tipo:'plan']"
+								update="cambioDatos">Plan</g:remoteLink></button>
+					
+			</div>
+		
+
+		<div id="cambioDatos"></div>
+
+	</div>

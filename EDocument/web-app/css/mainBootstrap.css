@@ -95,22 +95,30 @@ nav{
 	padding-bottom: 40px;
 }
 footer{
-	position:relative;
-	background: #5097f3;
-	left: 0px;
-	bottom: 0px;
-	right:0px;
-	height:60px;	
+		
 }
 
-footer > p{
+footer > p{	
 	text-align: center; 
-	color: #0000ff;
-	font-size:25px;
+	color: #00a4FF;
+	font-size:16px;
+	text-shadow: 4px 2px 5px #1f9444;
+    filter: dropshadow(color=#1f9444, offx=4, offy=2);
 }
 
 #userID{
 	margin-top:0px;
 	text-align:right;
 	padding-right:5px;
+}
+
+#menu ul{
+	
+
+}
+
+#menuVertical{
+	position: relative;
+	top: -45px;
+	left: -380px;
 }

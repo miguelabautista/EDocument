@@ -1,9 +1,9 @@
 <html>
 <head>
-<meta name='layout' content='principal' />
-<title>E-Document</title>
-<r:require modules="jquery,jquery-ui,bootstrap,bootstrap-responsive-css" />
-<r:script>
+    <meta name='layout' content='principal'/>
+    <title>E-Document</title>
+    <r:require modules="jquery,jquery-ui,bootstrap,bootstrap-responsive-css,font-awesome"/>
+    <r:script>
 	
 
 	/*window.onbeforeunload = function() {
@@ -24,11 +24,11 @@ function showLogin(){
 
 function authAjax() {
 	$('#loginUpdate').html('Accediendo...');
-    $.ajax({
+	$.ajax({
                  type:'POST',
                  data:$('#ajaxLoginForm').serialize(),        
                  url:'${request.contextPath}/j_spring_security_check',
-                 success:function(data,textStatus){ 
+                 success:function(data,textStatus){
                   if(data.success){
                       procesar();
                    }else{
@@ -40,6 +40,7 @@ function authAjax() {
                  console.log("error");
                }
     });
+
 }
 
 function cancelLogin(){
@@ -51,28 +52,30 @@ function procesar(){
             $('#myModal').html(''); 
 
     });   
-    $.get("${createLink(controller:'principal',action:'respuesta')}",function(data,status){
-          	$('#cambio').html(data);  		
+    $.get("${createLink(controller: 'principal', action: 'respuesta')}",function(data,status){
+
+          	$('#cambio').html(data);
   	});
    
   	$("#botonOut").html('<g:link controller="logout">log out</g:link>');	
   	
 }
 
-</r:script>
+    </r:script>
 </head>
+
 <body>
 
-	<div id="cambio">
+<div id="cambio">
 
-		<sec:ifLoggedIn>
-			<g:render template="/principal/principal" />
-		</sec:ifLoggedIn>
-		<sec:ifNotLoggedIn>
-			<g:render template="/inicio" />
-		</sec:ifNotLoggedIn>
+    <sec:ifAnyGranted roles="ROLE_ADMIN">
+        <g:render template="/principal/principal"/>
+    </sec:ifAnyGranted>
+    <sec:ifNotLoggedIn>
+        <g:render template="/inicio"/>
+    </sec:ifNotLoggedIn>
 
-	</div>
+</div>
 
 </body>
 </html>

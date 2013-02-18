@@ -7,6 +7,7 @@
 		<g:message code="conexiones.ip.label" default="Ip" />
 		
 	</label>
+
 	<g:textField name="ip" value="${conexionesInstance?.ip}"/>
 </div>
 

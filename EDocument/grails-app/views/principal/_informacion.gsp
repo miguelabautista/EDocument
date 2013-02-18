@@ -2,8 +2,6 @@
 	<g:render template="menu" />
 
 	
-
-	
 			<div id="menuVertical" class="btn-group">
 				
 						<button><g:remoteLink controller="principal"

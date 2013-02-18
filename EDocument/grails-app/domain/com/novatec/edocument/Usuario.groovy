@@ -16,7 +16,7 @@ class Usuario extends User{
 	static constraints = { 
 		nombre blank:false
 		apellido blank:false
-		cedula_rif blank:false , matches: /\d{1,2}.\d{3,3}.\d{3,3}/
+		cedula_rif blank:false , matches: /\d{1,2}.\d{3,3}.\d{3,3}/ , unique:true
 		direccion()
 		organizacion()
 		email email:true

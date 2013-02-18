@@ -20,7 +20,7 @@ class Organizacion {
     static constraints = {
     }
 
-    String toStrint(){
+    String toString(){
     	nombre
     }
 }

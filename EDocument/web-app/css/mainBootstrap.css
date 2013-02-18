@@ -55,6 +55,7 @@ src: url('../fonts/RobotoCondensed-Bold.ttf');
 	text-shadow: 4px 2px 1px #cc2b6c;
 	filter: dropshadow(color =   #cc2b6c, offx =   2, offy =   2);
 }
+
 #logoImagen{
 	width:87px;
 	height:50.5px;	

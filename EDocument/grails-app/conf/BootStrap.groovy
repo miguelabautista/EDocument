@@ -45,7 +45,7 @@ class BootStrap {
 			username="jose"
 			password = "123"
 			enabled = true
-		 	cedula_rif = "17.935.609"
+		 	cedula_rif = "17.935.634"
 		  	email = "jose@novatec.com"
 		 	direccion = "los ruices"
 		 	telefono = "0412332323"
@@ -60,10 +60,38 @@ class BootStrap {
 			}
 		}
 
-		usuario.save()
+		def usuario2 = new Usuario(organizacion:organ)
 
-		UserRole.create(usuario , role_user)
+		usuario2.with{
+			nombre = "pepe"
+			apellido = "jose"
+			username="juan"
+			password = "123"
+			enabled = true
+		 	cedula_rif = "17.935.609"
+		  	email = "jose@novatec.com"
+		 	direccion = "los ruices"
+		 	telefono = "0412332323"
+		 			
+		}
+
+		if(usuario2.validate()){
+			usuario2.save()
+		}else{
+			usuario2.errors.allErrors.each{
+				println it
+			}
+		}
+
+		organ.addToUsers(usuario2)
+
+		organ.save()
+
+		//usuario.save()
+
+		UserRole.create(usuario , role_admin)
 		UserRole.create(usuario1, role_super)
+		UserRole.create(usuario2 , role_user)
 
 		//	createSample()
 			

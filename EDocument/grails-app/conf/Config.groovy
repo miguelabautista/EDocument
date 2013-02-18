@@ -98,6 +98,13 @@ grails.resources.modules = {
    }
 }
 
+grails.cache.config = {
+   cache {
+      name 'datosResultado'
+   }
+   
+}
+
 grails.resources.adhoc.excludes = ['**/gwt/**']
 
 geoip.data.resource = "/WEB-INF/GeoLiteCity.dat"

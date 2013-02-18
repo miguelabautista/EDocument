@@ -25,7 +25,7 @@
 	<div class="container-narrow">
 		<div id="userID">
 		<sec:ifLoggedIn>
-			Bienvenido <sec:loggedInUserInfo field="username"/>			
+			Bienvenido <sec:loggedInUserInfo field="username"/>
 		</sec:ifLoggedIn>
 		</div>
 		<header class="masthead">

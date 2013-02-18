@@ -1,4 +1,6 @@
+
 	<h1>Solucion Gestor Documental</h1>
+
 	<p class="lead" style="text-align: inherit;">
 		<span>E-Document</span> es un servicio dirigido a las empresas
 		pequeñas y medianas y a los profesionales y personas que requieren
@@ -12,4 +14,3 @@
 	
 	<g:render template="/login/loginAjax" />
 
-	

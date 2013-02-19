@@ -1,4 +1,4 @@
-grails.servlet.version = "3.0" // Change depending on target container compliance (2.5 or 3.0)
+grails.servlet.version = "2.5" // Change depending on target container compliance (2.5 or 3.0)
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
@@ -82,6 +82,6 @@ grails.project.dependency.resolution = {
         compile ":quartz-monitor:0.3-RC1"
         compile ":remote-pagination:0.4.1"
         compile ":font-awesome-resources:3.0"
-		//compile ":grails-melody:1.13"
+	//	compile ":grails-melody:1.13"
     }
 }

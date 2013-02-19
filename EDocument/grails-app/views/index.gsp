@@ -14,7 +14,7 @@
 	//	document.forms['loginForm'].elements['j_username'].focus();
 	//})();
 
-  $(".bordeexterno").height($(document).innerHeight());
+ // $(".bordeexterno").height($(document).innerHeight());
 
   
   	
@@ -37,7 +37,7 @@ function authAjax() {
                      
                  },
                  error:function(XMLHttpRequest,textStatus,errorThrown){
-                 console.log("error");
+
                }
     });
 
@@ -57,8 +57,8 @@ function procesar(){
           	$('#cambio').html(data);
   	});
    
-  	$("#botonOut").html('<g:link controller="logout">log out</g:link>');	
-  	
+  	$("#botonOut").html('<g:link controller="logout">log out</g:link>');
+
 }
 
     </r:script>

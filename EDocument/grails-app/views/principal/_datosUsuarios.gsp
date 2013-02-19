@@ -1,6 +1,6 @@
 
 <g:render template="/principal/menu"/>
-<div>Datos Del Usuario</div>
+<div>Datos De Usuarios de la Organizacion</div>
 <br/>
 			<table id="tablaUsuarios" class="table table-bordered">
 				<thead>

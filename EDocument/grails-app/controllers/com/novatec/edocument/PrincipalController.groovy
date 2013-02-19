@@ -17,7 +17,12 @@ class PrincipalController {
 	//TODO:posible eliminacion
 	/*def informacion(){
 		render template:"informacion"
-	}       */
+	}*/
+
+    def actualizarDatos(){
+        println params
+        render "<p>hola</hola>"
+    }
 
 	
 	def retornarDatos(){
@@ -39,12 +44,12 @@ class PrincipalController {
 
         def tipo = params.tipo
 
-        println "valor de user " + params.user
-
         if (tipo == "passwordModificacion"){
             render template: "passwordModificacion"
         }  else if (tipo == "usuarioModificacion")  {
             render template: "datosModificacion"
+        }  else if(tipo == "organizacionModificacion"){
+            render template:"datosOrganizacionModificacion"
         }
     }
 }

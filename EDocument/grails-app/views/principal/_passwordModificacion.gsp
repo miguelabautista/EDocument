@@ -2,20 +2,20 @@
 
 <form class="form-horizontal">
     <div class="control-group">
-        <label class="control-label" for="usuario">Password</label>
+        <label class="control-label" for="password">Password</label>
         <div class="controls">
-            <input type="password" id="usuario" placeholder="Password">
+            <input type="password" id="password" placeholder="Password">
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label" for="inputPassword">Repeat Password</label>
+        <label class="control-label" for="repeatPassword">Repeat Password</label>
         <div class="controls">
-            <input type="password" id="inputPassword" placeholder="Repeat Password">
+            <input type="password" id="repeatPassword" placeholder="Repeat Password">
         </div>
     </div>
     <div class="control-group">
         <div class="controls">
-            <button type="submit" class="btn">Sign in</button>
+            <g:submitToRemote action="submitData" update="cambio" class="btn" name="submit" value="Aceptar"/>
         </div>
     </div>
 </form>

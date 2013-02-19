@@ -1,5 +1,5 @@
 body {
-	
+
 }
 
 /* Custom container */
@@ -58,7 +58,7 @@ src: url('../fonts/RobotoCondensed-Bold.ttf');
 
 #logoImagen{
 	width:87px;
-	height:50.5px;	
+	height:50.5px;
 	float:left;
 }
 #positionTitulo{
@@ -82,7 +82,8 @@ nav{
 #contenido{
 	margin-top:0;
 	margin-bottom: 0;
-	min-height: 420px; 
+	min-height: 420px;
+    max-height: 1000px;
 }
 .bordeexterno{
 	background:#fff;
@@ -96,14 +97,14 @@ nav{
 	padding-bottom: 40px;
 }
 footer{
-		
+
 }
 
-footer > p{	
-	text-align: center; 
+footer > p{
+	text-align: center;
 	color: #00a4FF;
 	font-size:16px;
-	text-shadow: 4px 2px 5px #1f9444;
+	/*text-shadow: 4px 2px 5px #1f9444;    */
     filter: dropshadow(color=#1f9444, offx=4, offy=2);
 }
 
@@ -114,7 +115,7 @@ footer > p{
 }
 
 #menu ul{
-	
+
 
 }
 

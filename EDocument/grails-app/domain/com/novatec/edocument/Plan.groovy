@@ -6,6 +6,7 @@ class Plan {
 	double costo
 
     static constraints = {
+        tipo blank: false
     }
 
     String toString(){

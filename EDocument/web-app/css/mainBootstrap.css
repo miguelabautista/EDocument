@@ -82,7 +82,7 @@ nav{
 #contenido{
 	margin-top:0;
 	margin-bottom: 0;
-	min-height: 420px;
+	min-height: 460px;
     max-height: 1000px;
 }
 .bordeexterno{
@@ -97,7 +97,7 @@ nav{
 	padding-bottom: 40px;
 }
 footer{
-
+    margin-bottom: -23px;
 }
 
 footer > p{

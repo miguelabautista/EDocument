@@ -10,5 +10,9 @@ class Pago {
 	static belongsTo = [organizacion:Organizacion]
 
     static constraints = {
+        tipoPago blank: false
+        monto: false
+        nombreBanco: false
+        numeroReferencia: false
     }
 }

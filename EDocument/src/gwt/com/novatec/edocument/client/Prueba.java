@@ -41,7 +41,7 @@ public class Prueba implements EntryPoint {
 			  
 			}
 		});
-		RootPanel.get().add(a);
-		RootPanel.get().add(l);
+		RootPanel.get("cambio2").add(a);
+		RootPanel.get("cambio2").add(l);
     }
 }

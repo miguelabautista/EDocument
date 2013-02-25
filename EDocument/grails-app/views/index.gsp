@@ -62,11 +62,12 @@ function procesar(){
 }
 
     </r:script>
+  
 </head>
 
 <body>
 
-<div id="cambio">
+  <div id="cambio">
 
     <sec:ifAnyGranted roles="ROLE_ADMIN">
         <g:render template="/principal/principal"/>

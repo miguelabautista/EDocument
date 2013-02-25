@@ -16,7 +16,7 @@
 }
 .ajaxFlowError {
 	width: 97.5%;
-	border: 1px dotted red;
+	
 	padding: 10px 10px 10px 10px;
 }
 
@@ -117,7 +117,7 @@
 }
 
 .ajaxFlow .content a, .ajaxFlow .content a:visited {
-	color: red;
+	color: #0011F2;
 	text-decoration: none;
 }
 
@@ -164,7 +164,7 @@
 	zoom: 1; /* IE 6 & 7 hack */
 	*display: inline; /* IE 6 & 7 hack */
 	width: 100%;
-	position:relative;
+	position:absolute;
 	top: 40%;
 	left: 25%;
 	width: 50%;

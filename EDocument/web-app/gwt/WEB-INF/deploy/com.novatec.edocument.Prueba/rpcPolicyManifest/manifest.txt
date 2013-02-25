@@ -1,0 +1,3 @@
+# Module com.novatec.edocument.Prueba
+# RPC service class, partial path of RPC policy file
+com.novatec.edocument.client.DataService, 8FA452393FECFED31EB76296932ACABC.gwt.rpc

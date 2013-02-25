@@ -3,9 +3,9 @@
 
 <h3>Bienvenido</h3>
 
-
-<span>Vigencia:</span>  <sec:loggedInUserInfo field="enabled"/>
-
+<div class="alert">
+Vigencia del Servicio <sec:loggedInUserInfo field="enabled"/>
+</div>
 
 
 

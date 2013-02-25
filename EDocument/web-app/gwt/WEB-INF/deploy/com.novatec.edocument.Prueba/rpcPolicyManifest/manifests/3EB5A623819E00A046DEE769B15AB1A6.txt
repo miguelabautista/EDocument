@@ -1,0 +1,2 @@
+serviceClass: com.novatec.edocument.client.DataService
+path: 8FA452393FECFED31EB76296932ACABC.gwt.rpc

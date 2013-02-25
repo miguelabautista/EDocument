@@ -8,7 +8,7 @@
 		requieren tenerlos disponibles en línea y compartirlos con sus
 		clientes y proveedores.
 	</p>
-	<g:remoteLink class="btn" controller="registro" action="index" update="cambio">Registrar</g:remoteLink>
+		<g:remoteLink class="btn" controller="tipoRegistro" action="index" update="cambio">Afiliarse</g:remoteLink>
 	
 	<a href="#myModal" role="button" class="btn" data-toggle="modal">Ingresar</a>
 	

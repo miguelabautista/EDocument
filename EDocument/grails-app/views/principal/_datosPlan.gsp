@@ -1,5 +1,5 @@
 <g:render template="/principal/menu"/>
-<div>Datos Organizacion</div>
+<div>Gestion de Plan</div>
 <br/>
 <table id="tablaPlan" class="table table-bordered">
 	<thead>
@@ -29,4 +29,4 @@
 </table>
 <br/>
 <g:remoteLink class="btn btn-primary" controller="principal" action="modificar"
-              params="[tipo: 'planModificacion',user:user]">Modificar</g:remoteLink>
+              params="[tipo: 'planModificacion',user:user]" update="cambio">Modificar</g:remoteLink>

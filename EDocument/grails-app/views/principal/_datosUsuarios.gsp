@@ -12,6 +12,8 @@
 						<th>email</th>
 						<th>Direccion</th>
 						<th>Telefono</th>
+						<th>Role</th>
+                        <th> </th>
 					</tr>
 				</thead>
 				<tbody>
@@ -19,7 +21,7 @@
 				<tr>
 					<td>${i + 1}</td>
 					<td>
-						<a href="">${us.nombre}</a>
+						<g:remoteLink controller="principal" action="modificar" update="cambio"        					params='[tipo:"usuarioAModificar",id:"${us.id}"]'>${us.nombre}</g:remoteLink>
 					</td>
 					
 					<td>
@@ -40,8 +42,12 @@
 					
 					<td>
 						${us.telefono}
-					</td>					
+					</td>		
+					<td>ROLE_USER</td>
+                    <td><a href="#">X</a></td>
 				</tr>
 				</g:each>
 				</tbody>
-			</table>
+	</table>
+	<g:remoteLink class="btn btn-primary" controller="principal" action="modificar"
+              params="[tipo: 'usuariosModificacion',user:user.id]" onFailure="if(XMLHttpRequest().status == 401){showLogin();}" update="cambio">Agregar</g:remoteLink>

@@ -26,7 +26,7 @@ class BootStrap {
 			
 		}
 
-		def organ = new Organizacion(nombre:"banco X",rif:"2332",direccion:"la candelaria",plan:planBarato,email:"banco@novate.com",telefono:"04148501853",fechaPago:new Date())
+		def organ = new Organizacion(nombre:"banco X",nombreCorto:'bx',rif:"2332",direccion:"la candelaria",plan:planBarato,email:"banco@novate.com",telefono:"04148501853",fechaPago:new Date())
 
 		if(organ.validate()){
 			organ.save(flush:true)

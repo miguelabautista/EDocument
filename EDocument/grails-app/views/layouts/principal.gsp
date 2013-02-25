@@ -59,7 +59,7 @@
 			<r:layoutResources />
 		</div>
 		
-		<hr/>
+		<hr style="margin:15px 0;"/>
 		<footer>
 			<p>novatec</p>
 		</footer>

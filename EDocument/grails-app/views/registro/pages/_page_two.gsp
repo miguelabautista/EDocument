@@ -1,48 +1,43 @@
-
 <%
-/**
- * second wizard page / tab
- *
- * @author	Jeroen Wesbeek <work@osx.eu>
- * @package AjaxFlow
- */
+    /**
+     * second wizard page / tab
+     *
+     * @author Jeroen Wesbeek <work@osx.eu>
+     * @package AjaxFlow
+     */
 %>
 <af:page>
-	<h1>Datos del usuario</h1>
-	<div class="form-horizontal">
-		<div class="control-group">
-			<label class="control-label" for="nombre">Nombre</label>
-			<div class="controls">
-				<g:textField name="nombre" placeholder="Nombre" value="${Usuario?.nombre}"/>
-			</div>
-		</div>
+    <h1>Cuenta Usuario</h1>
+    <br/>
 
-		<div class="control-group">
-			<label class="control-label" for="apellido">Apellido</label>
-			<div class="controls">
-				<g:textField name="apellido" placeholder="Apellido" value="${Usuario?.apellido}"/>
-			</div>
-		</div>
+    <div class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="username">Nombre Usuario</label>
 
-		<div class="control-group">
-			<label class="control-label" for="cedula">Cedula</label>
-			<div class="controls">
-				<g:textField name="cedula" required="" placeholder="Cedula" value="${Usuario?.cedula}"/>
-			</div>
-		</div>
+            <div class="controls">
+                <g:textField name="username" id="username" required="" value="${Cuenta?.username}"/>
+                <span class="help-inline">*</span>
+            </div>
+        </div>
 
-		<div class="control-group">
-			<label class="control-label" for="email">Email</label>
-			<div class="controls">
-				<g:textField name="email" placeholder="Email" value="${Usuario?.email}"/>
-			</div>
-		</div>
+        <div class="control-group">
+            <label class="control-label" for="password">Contraseña</label>
 
-		<div class="control-group">
-			<label class="control-label" for="direccion">Direccion</label>
-			<div class="controls">
-				<g:textField name="direccion" placeholder="Direccion" value="${Usuario?.direccion}"/>
-			</div>
-		</div>
-	</div>
+            <div class="controls">
+                <g:passwordField name="password" id="password" required="" value="${Cuenta?.password}"/>
+                <span class="help-inline">*</span>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="password">Repetir Contraseña</label>
+
+            <div class="controls">
+                <g:passwordField name="password" id="password" required="" value="${Cuenta?.repeatPassword}"/>
+                <span class="help-inline">*</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert-info">* campos requeridos</div>
 </af:page>

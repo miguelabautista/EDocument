@@ -1,61 +1,48 @@
-<g:render template="/principal/menu"/>
-
-<g:formRemote name="actualizarDatosUsuario" url="[controller: 'principal', action: 'actualizarDatos']" update="cambio"
-              class="form-horizontal">
+<g:form name="actualizarDatosUsuario"  class="form-horizontal">
     <div class="control-group">
         <label class="control-label" for="nombre">Nombre</label>
-
         <div class="controls">
-            <input type="text" id="nombre" placeholder="Nombre">
+            <g:textField name="nombre" id="nombre" value="${user?.nombre}" placeholder="Nombre"/>
         </div>
     </div>
-
     <div class="control-group">
         <label class="control-label" for="apellido">Apellido</label>
-
         <div class="controls">
-            <input type="text" id="apellido" placeholder="Apellido">
+            <g:textField name="apellido" id="apellido" value="${user?.apellido}" placeholder="apellido"/>
         </div>
     </div>
-
     <div class="control-group">
         <label class="control-label" for="cedula">Cedula</label>
-
         <div class="controls">
-            <input type="text" id="cedula" placeholder="Cedula">
+            <g:textField name="cedula" id="cedula" value="${user?.cedula_rif}" placeholder="Cedula"/>
         </div>
     </div>
-
     <div class="control-group">
         <label class="control-label" for="mail">Email</label>
-
         <div class="controls">
-            <input type="text" id="mail" placeholder="Email">
+            <g:textField name="email" id="email" value="${user?.email}" placeholder="Email"/>
         </div>
     </div>
-
     <div class="control-group">
         <label class="control-label" for="direccion">Direccion</label>
-
         <div class="controls">
-            <input type="text" id="direccion" placeholder="Direccion">
+            <g:textField name="direccion" id="direccion" value="${user?.direccion}" placeholder="Direccion"/>
         </div>
     </div>
-
     <div class="control-group">
         <label class="control-label" for="telefono">Telefono</label>
-
         <div class="controls">
-            <input type="text" id="telefono" placeholder="Telefono">
+            <g:textField name="telefono" id="telefono" value="${user?.telefono}" placeholder="Telefono"/>
         </div>
     </div>
 
-    <div class="control-group">
-        <div class="controls">
-            <g:actionSubmit name="aceptar" value="Sign in" class="btn"/>
-            <br/>
-            <g:actionSubmit name="cancelar" value="Cancelar" class="btn"/>
-        </div>
+    <div style="display:inline;">
+            <g:submitToRemote url="[controller: 'principal', action: 'actualizarDatos']" update="cambio" name="aceptar" value="Aceptar" class="btn"/>
+            </g:form>           
+            <g:remoteLink class="btn" controller="principal"
+                                action="seleccionMenu" params="[seleccion:'registro']"
+                                update="cambio" onSuccess="activar('cuentaLink');" onFailure="if (XMLHttpRequest.status==401) { showLogin(); }else{ console.log('otro'); }">Cancelar</g:remoteLink>
     </div>
-</g:formRemote>
+   
+
 

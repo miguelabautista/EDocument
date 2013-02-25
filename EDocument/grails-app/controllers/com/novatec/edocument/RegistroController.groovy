@@ -1,27 +1,23 @@
 package com.novatec.edocument
 
-class OrganizacionCommand implements Serializable{
+class OrganizacionAndUserCommand implements Serializable{
 	String organizacionNombre
+	String organizacionNombreCorto
 	String organizacionRif
 	String organizacionDireccion
 	String organizacionTelefono1
-	String organizacionTelefono2
 	
-	static constraints = {
-		organizacionNombre(blank:false)
-	}
-}
-class UsuarioCommand implements Serializable{
+	
 	String nombre
 	String apellido
 	String cedula
 	String email
 	String direccion
-	
-	static constraints = {
-		
+
+	static constraints = {		
 	}
 }
+
 class CuentaCommand implements Serializable{
 	String username
 	String password
@@ -30,6 +26,15 @@ class CuentaCommand implements Serializable{
 	static constraints = {
 		
 	}
+}
+class PlanCommand implements Serializable{
+	String tipoPlan
+
+	static constraints = {
+
+
+	}
+
 }
 class RegistroController {
 	// the pluginManager is used to check if the Grom
@@ -71,9 +76,9 @@ class RegistroController {
 			// wizard tabs. Also see common/_tabs.gsp for more information
 			flow.page = 0
 			flow.pages = [
-				[title: 'Organizacion'],
-				[title: 'Usuario'],
+				[title: 'Afiliacion'],
 				[title: 'Cuenta'],
+				[title: 'Plan'],
 				[title: 'Confirmacion'],
 				[title: 'Listo']
 			]
@@ -110,7 +115,7 @@ class RegistroController {
 				flow.page = 1
 				success()
 			}
-			on("next") { OrganizacionCommand om ->
+			on("next") { OrganizacionAndUserCommand om ->
 				
 				if(om.hasErrors()){
 				   return error()
@@ -131,11 +136,11 @@ class RegistroController {
 				flow.page = 2
 				success()
 			}
-			on("next"){ UsuarioCommand uc->
-				if(uc.hasErrors()){
+			on("next"){ CuentaCommand cm->
+				if(cm.hasErrors()){
 					println "Error"
 				}
-				flow.Usuario = uc
+				flow.Cuenta = cm
 				
 
 				}.to "pageThree"
@@ -153,11 +158,12 @@ class RegistroController {
 				flow.page = 3
 				success()
 			}
-			on("next"){CuentaCommand cm ->
-				if(cm.hasErrors()){
-					return error()
+			on("next"){ PlanCommand pc ->
+				if(pc.hasErrors()){
+					println "Error"
 				}
-				flow.Cuenta = cm
+				flow.Plan = pc
+				
 			}.to "pageFour"
 			on("previous").to "pageTwo"
 			
@@ -266,6 +272,18 @@ class RegistroController {
 				
 				success()
 			}
+		}
+	}
+
+	def planSeleccionado(){
+		def tipoPlan = params.plan
+
+	    if(tipoPlan == "planMedio"){
+			render "<h3 class='alert alert-success'>Plan Medio Seleccionado</h3>"
+		}else if(tipoPlan == "planAlto"){
+			render "<h3 class='alert alert-success'>Plan Alto Seleccionado</h3>"
+		}else if(tipoPlan == "planBajo"){
+			render "<h3 class='alert alert-success'>Plan Bajo Seleccionado</h3>"
 		}
 	}
 }

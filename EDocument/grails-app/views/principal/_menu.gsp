@@ -5,18 +5,23 @@
 			<div class="nav-collapse collapse">
 				<ul class="nav" style="margin-left: 210px;">
 				       <li id="cuentaLink"><g:remoteLink controller="principal"
-								action="retornarDatos" params="[tipo:'cuenta']"
-								update="cambio" onSuccess="activar('cuentaLink');" onFailure="if (XMLHttpRequest.status==401) { showLogin(); }else{ console.log('otro'); }">Cuenta</g:remoteLink></li>
-						<li id="organizacionLink"><g:remoteLink
-								controller="principal" action="retornarDatos" onSuccess="activar('organizacionLink');"
-								params="[tipo:'organizacion']" update="cambio" onFailure="if (XMLHttpRequest.status==401) { showLogin(); }else{ console.log('otro'); }">Organizacion</g:remoteLink></li>
-						<li id="planLink"><g:remoteLink controller="principal"
-								action="retornarDatos" params="[tipo:'plan']"
-								update="cambio" onSuccess="activar('planLink');" onFailure="if (XMLHttpRequest.status==401) { showLogin(); }else{ console.log('otro'); }">Plan</g:remoteLink></li>
-						<li id="usuariosLink"><g:remoteLink controller="principal"
-						    	action="retornarDatos" params="[tipo:'usuarios']"
-								update="cambio"  onSuccess="activar('usuariosLink');" onFailure="if (XMLHttpRequest.status==401) { showLogin(); }else{ console.log('otro'); }">Usuarios</g:remoteLink></li>
-				        <li id="gestorLink"><g:remoteLink controller="principal" action="retornarDatos" params="[tipo:'gestor']"  onSuccess="activar('gestorLink');" onFailure="if(XMLHttpRequest().status == 401){showLogin();}">
+								action="seleccionMenu" params="[seleccion:'registro']"
+								update="cambio" onSuccess="activar('cuentaLink');" onFailure="if (XMLHttpRequest.status==401) { showLogin(); }else{ console.log('otro'); }">Datos Registro</g:remoteLink></li>
+						 <li class="dropdown">
+                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestion Cuenta<b class="caret"></b></a>
+                			<ul class="dropdown-menu">
+                  				<li><g:remoteLink controller="principal" action="seleccionMenu" params="[seleccion:'usuarios']" onFailure="if(XMLHttpRequest().status == 401){showLogin();}" update="cambio">
+                            	Inclusion de Usuarios
+				        		</g:remoteLink> </li>
+                 		    	<li><g:remoteLink controller="principal" action="seleccionMenu" params="[seleccion:'planes']" onFailure="if(XMLHttpRequest().status == 401){showLogin();}" update="cambio">
+                            	Manejo Planes
+				        	</g:remoteLink> </li>
+                 				</ul>
+             		 	</li>	
+             		 	<li id="pagoLink"><g:remoteLink controller="principal" action="seleccionMenu" params="[seleccion:'pagos']" onSuccess="activar('pagoLink');" onFailure="if(XMLHttpRequest().status == 401){showLogin();}" update="cambio">
+                            Pagos
+				        </g:remoteLink> </li>					
+				        <li id="gestorLink"><g:remoteLink controller="principal" action="seleccionMenu" params="[seleccion:'gestor']" onSuccess="activar('gestorLink');" onFailure="if(XMLHttpRequest().status == 401){showLogin();}" update="cambio">
                             Gestor Documental
 				        </g:remoteLink> </li>
                 </ul>

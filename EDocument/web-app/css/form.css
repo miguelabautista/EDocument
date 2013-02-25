@@ -10,11 +10,9 @@ input:invalid:focus, select:invalid:focus, textarea:invalid:focus {
 	        box-shadow: 0 0 0.5em #ffaaaa;
 }
 .form-horizontal .controls{
-	width:40px;
-	margin-left: 100px;
+       width:300px;
 }
 .control-label{
-	margin-left: 110px;
-	margin-right:5px;
-	width:210px;
+    width:200px;
+    margin-left: 49px;
 }

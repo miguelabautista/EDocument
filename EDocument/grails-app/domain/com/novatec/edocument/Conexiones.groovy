@@ -4,5 +4,6 @@ class Conexiones {
 	String ip
 	
     static constraints = {
+        ip blank: false
     }
 }

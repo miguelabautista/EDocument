@@ -1,24 +1,24 @@
 package com.novatec.edocument
 
-class OrganizacionAndUserCommand implements Serializable{
+class OrganizacionAndUserNaturalCommand implements Serializable{
 	String organizacionNombre
 	String organizacionNombreCorto
 	String organizacionRif
 	String organizacionDireccion
 	String organizacionTelefono1
-	
-	
+
+
 	String nombre
 	String apellido
 	String cedula
 	String email
 	String direccion
 
-	static constraints = {		
+	static constraints = {
 	}
 }
 
-class CuentaCommand implements Serializable{
+class CuentaNaturalCommand implements Serializable{
 	String username
 	String password
 	String repeatPassword
@@ -27,7 +27,7 @@ class CuentaCommand implements Serializable{
 		
 	}
 }
-class PlanCommand implements Serializable{
+class PlanNaturalCommand implements Serializable{
 	String tipoPlan
 
 	static constraints = {
@@ -115,7 +115,7 @@ class RegistroNaturalController {
 				flow.page = 1
 				success()
 			}
-			on("next") { OrganizacionAndUserCommand om ->
+			on("next") { OrganizacionAndUserNaturalCommand om ->
 				
 				if(om.hasErrors()){
 				   return error()
@@ -136,7 +136,7 @@ class RegistroNaturalController {
 				flow.page = 2
 				success()
 			}
-			on("next"){ CuentaCommand cm->
+			on("next"){ CuentaNaturalCommand cm->
 				if(cm.hasErrors()){
 					println "Error"
 				}
@@ -158,7 +158,7 @@ class RegistroNaturalController {
 				flow.page = 3
 				success()
 			}
-			on("next"){ PlanCommand pc ->
+			on("next"){ PlanNaturalCommand pc ->
 				if(pc.hasErrors()){
 					println "Error"
 				}

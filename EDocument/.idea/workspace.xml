@@ -2,47 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/principal/datosModificacion/_cuentaModificacion.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target-eclipse/classes/ApplicationResources.class" afterPath="$PROJECT_DIR$/target-eclipse/classes/ApplicationResources.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target-eclipse/classes/BuildConfig.class" afterPath="$PROJECT_DIR$/target-eclipse/classes/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target-eclipse/classes/Config.class" afterPath="$PROJECT_DIR$/target-eclipse/classes/Config.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target-eclipse/classes/DataSource.class" afterPath="$PROJECT_DIR$/target-eclipse/classes/DataSource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target-eclipse/classes/resources.class" afterPath="$PROJECT_DIR$/target-eclipse/classes/resources.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/ApplicationResources.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/ApplicationResources.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Conexiones.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Conexiones.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Organizacion.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Organizacion.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Pago.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Pago.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Plan.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Plan.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/com/novatec/edocument/PrincipalController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/com/novatec/edocument/PrincipalController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gwt/com/novatec/edocument/client/Prueba.java" afterPath="$PROJECT_DIR$/src/gwt/com/novatec/edocument/client/Prueba.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/Registro.css" afterPath="$PROJECT_DIR$/web-app/css/Registro.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/com/novatec/edocument/RegistroController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/com/novatec/edocument/RegistroController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/com/novatec/edocument/RegistroNaturalController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/com/novatec/edocument/RegistroNaturalController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/registro/common/_ajaxflow.gsp" afterPath="$PROJECT_DIR$/grails-app/views/registro/common/_ajaxflow.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/principal/_datosModificacion.gsp" afterPath="$PROJECT_DIR$/grails-app/views/principal/_datosModificacion.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/principal/_datosPlan.gsp" afterPath="$PROJECT_DIR$/grails-app/views/principal/_datosPlan.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/principal/_datosUsuarios.gsp" afterPath="$PROJECT_DIR$/grails-app/views/principal/_datosUsuarios.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/registro/pages/_final_page.gsp" afterPath="$PROJECT_DIR$/grails-app/views/registro/pages/_final_page.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/_inicio.gsp" afterPath="$PROJECT_DIR$/grails-app/views/_inicio.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/principal/_menu.gsp" afterPath="$PROJECT_DIR$/grails-app/views/principal/_menu.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/registro/pages/_page_four.gsp" afterPath="$PROJECT_DIR$/grails-app/views/registro/pages/_page_four.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/registro/common/_page_header.gsp" afterPath="$PROJECT_DIR$/grails-app/views/registro/common/_page_header.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/registro/common/_navigation.gsp" afterPath="$PROJECT_DIR$/grails-app/views/registro/common/_navigation.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/registro/common/_on_page.gsp" afterPath="$PROJECT_DIR$/grails-app/views/registro/common/_on_page.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/registro/pages/_page_one.gsp" afterPath="$PROJECT_DIR$/grails-app/views/registro/pages/_page_one.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/registro/pages/_page_three.gsp" afterPath="$PROJECT_DIR$/grails-app/views/registro/pages/_page_three.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/registro/pages/_page_two.gsp" afterPath="$PROJECT_DIR$/grails-app/views/registro/pages/_page_two.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/principal/_principal.gsp" afterPath="$PROJECT_DIR$/grails-app/views/principal/_principal.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/application.js" afterPath="$PROJECT_DIR$/web-app/js/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/form.css" afterPath="$PROJECT_DIR$/web-app/css/form.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/registro/common/_please_wait.gsp" afterPath="$PROJECT_DIR$/grails-app/views/registro/common/_please_wait.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/registro/common/_tabs.gsp" afterPath="$PROJECT_DIR$/grails-app/views/registro/common/_tabs.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gwt/logs/com.novatec.edocument.Prueba.log" afterPath="$PROJECT_DIR$/target/gwt/logs/com.novatec.edocument.Prueba.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/index.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/prueba/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/prueba/index.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/mainBootstrap.css" afterPath="$PROJECT_DIR$/web-app/css/mainBootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/principal.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/principal.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/war/web.xml" afterPath="$PROJECT_DIR$/src/templates/war/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/i18n/messages_es.properties" afterPath="$PROJECT_DIR$/grails-app/i18n/messages_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EDocument.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
-    <file path="/Dummy.txt" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1361795953154" ignored="false" />
+    <file path="/Dummy.txt" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1363611239400" ignored="false" />
     <file path="/fragment.java" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1361203578680" ignored="false" />
     <file path="/_form.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1361203624332" ignored="false" />
     <file path="/_menu.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1361219480196" ignored="false" />
@@ -61,7 +39,7 @@
     <file path="/springSecurityUI.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1361282704894" ignored="false" />
     <file path="/principal.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1361728668539" ignored="false" />
     <file path="/_datosUsuarios.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1361797493934" ignored="false" />
-    <file path="/_page_one.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1361728328246" ignored="false" />
+    <file path="/_page_one.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1363636331321" ignored="false" />
     <file path="/form.css" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1361727877282" ignored="false" />
     <file path="/_page_two.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1361728410994" ignored="false" />
     <file path="/_page_three.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1361728280583" ignored="false" />
@@ -74,6 +52,16 @@
     <file path="/Plan.groovy" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1361799328550" ignored="false" />
     <file path="/_cuentaModificacion.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1361797313195" ignored="false" />
     <file path="/_organizacionModificacion.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1361797381580" ignored="false" />
+    <file path="/_ajaxflow.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1363619474235" ignored="false" />
+    <file path="/_please_wait.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1363611633802" ignored="false" />
+    <file path="/_navigation.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1363620102710" ignored="false" />
+    <file path="/_tabs.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1363612220318" ignored="false" />
+    <file path="/_on_page.gsp" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1363619689084" ignored="false" />
+    <file path="/a.dummy" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1363614565223" ignored="false" />
+    <file path="/RegistroController.groovy" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1363630208224" ignored="false" />
+    <file path="/RegistroNaturalController.groovy" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1363617527574" ignored="false" />
+    <file path="/Registro.css" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1363634065482" ignored="false" />
+    <file path="/messages_es.properties" changelist="fef39a09-2bbc-43ad-a0e6-8e4d752ef4b1" time="1363631196235" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,22 +120,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_datosUsuarios.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/principal/_datosUsuarios.gsp">
+      <file leaf-file-name="_page_one.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/registro/pages/_page_one.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="29" selection-start="391" selection-end="391" vertical-scroll-proportion="-4.3404255">
+            <state line="183" column="91" selection-start="9410" selection-end="9410" vertical-scroll-proportion="-8.617022">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Plan.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Plan.groovy">
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="Registro.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/css/Registro.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="25" selection-start="138" selection-end="138" vertical-scroll-proportion="0.2264151">
+            <state line="209" column="19" selection-start="3930" selection-end="3930" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistroController.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/novatec/edocument/RegistroController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="238" column="49" selection-start="7440" selection-end="7440" vertical-scroll-proportion="6.5867157">
               <folding />
             </state>
           </provider>
@@ -168,25 +162,32 @@
       <MyDateState />
     </option>
   </component>
+  <component name="GradleLocalSettings">
+    <option name="expandStates">
+      <map>
+        <entry key="EDocument" value="true" />
+      </map>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/views/registroNatural/pages/_page_two.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/registro/pages/_page_two.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/tipoRegistro/_tipoDeRegistro.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/principal.gsp" />
-        <option value="$PROJECT_DIR$/web-app/css/mainBootstrap.css" />
-        <option value="$PROJECT_DIR$/grails-app/views/principal/_pagos.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Conexiones.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Organizacion.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Pago.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/principal/datosModificacion/_usuariosModificacion.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/com/novatec/edocument/PrincipalController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/principal/datosModificacion/_cuentaModificacion.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/principal/datosModificacion/_organizacionModificacion.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/principal/datosCuenta/_datosCuenta.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/principal/_datosUsuarios.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Plan.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/registro/common/_please_wait.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/registro/common/_tabs.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/com/novatec/edocument/RegistroNaturalController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/registro/common/_page_footer.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/registro/common/_navigation.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/registro/common/_ajaxflow.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/registro/common/_on_page.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/registro/pages/_error.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/com/novatec/edocument/RegistroController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/i18n/messages_es.properties" />
+        <option value="$USER_HOME$/.grails/2.2.0/projects/EDocument/plugins/quartz-1.0-RC5/web-app/css/main.css" />
+        <option value="$USER_HOME$/.grails/2.2.0/projects/EDocument/plugins/remote-pagination-0.4.1/web-app/css/main.css" />
+        <option value="$PROJECT_DIR$/web-app/css/Registro.css" />
+        <option value="$PROJECT_DIR$/grails-app/views/registro/pages/_page_one.gsp" />
       </list>
     </option>
   </component>
@@ -212,7 +213,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -223,7 +224,62 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EDocument" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -240,9 +296,9 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="Persistence.ERD.MergeInherited" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -253,6 +309,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Grails.Grails:EDocument">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -263,31 +325,12 @@
       <setting name="launchBrowser" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -316,6 +359,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -403,20 +459,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="20" width="1368" height="749" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6710963" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19772728" sideWeight="0.6710963" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1969697" sideWeight="0.6710963" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -430,7 +487,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -494,138 +550,134 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/registro/common/_page_header.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="28" selection-start="29" selection-end="29" vertical-scroll-proportion="0.028248588">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="17" selection-start="1095" selection-end="1095" vertical-scroll-proportion="1.0830325">
+          <folding>
+            <marker date="1363620407912" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1363620407912" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1363620407912" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1363620407912" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1363620407912" expanded="true" signature="-1:-1" placeholder="{&quot;type&quot;: 'POST'...}" />
+            <marker date="1363620407912" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1363620407912" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1363620407912" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1363620407912" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1363620407912" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1363620407912" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1363620407912" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1363620407912" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/principal.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="38" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0">
+        <state line="23" column="55" selection-start="833" selection-end="833" vertical-scroll-proportion="-0.027075812">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/principal/_pagos.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/registro/common/_on_page.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="39" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.0">
+        <state line="20" column="47" selection-start="730" selection-end="730" vertical-scroll-proportion="0.57915056">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Conexiones.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/organizacion/_form.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="24" selection-start="71" selection-end="83" vertical-scroll-proportion="-1.2765957">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/plan/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="20" selection-start="976" selection-end="976" vertical-scroll-proportion="0.43436295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/i18n/messages.properties">
+      <provider editor-type-id="ResourceBundle">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="113" selection-end="113" vertical-scroll-proportion="-1.875">
+        <state line="12" column="0" selection-start="1377" selection-end="1398" vertical-scroll-proportion="0.3254973">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Organizacion.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+    <entry file="file://$USER_HOME$/.grails/2.2.0/projects/EDocument/plugins/quartz-1.0-RC5/web-app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="372" column="0" selection-start="6495" selection-end="6794" vertical-scroll-proportion="0.279646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/plan/_form.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="20" selection-start="51" selection-end="144" vertical-scroll-proportion="0.11299435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.grails/2.2.0/projects/EDocument/plugins/remote-pagination-0.4.1/web-app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="206" column="40" selection-start="3758" selection-end="3758" vertical-scroll-proportion="0.21238938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/i18n/messages_es.properties">
+      <provider editor-type-id="ResourceBundle">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="26" selection-start="568" selection-end="568" vertical-scroll-proportion="-8.4375">
+        <state line="12" column="48" selection-start="1477" selection-end="1477" vertical-scroll-proportion="-7.2">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Pago.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="330" selection-end="330" vertical-scroll-proportion="-5.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-9.5362835">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Role.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/registro/pages/_page_one.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="37" selection-end="37" vertical-scroll-proportion="-0.625">
+        <state line="183" column="91" selection-start="9410" selection-end="9410" vertical-scroll-proportion="-8.617022">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/User.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web-app/css/Registro.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="37" selection-end="37" vertical-scroll-proportion="-0.625">
+        <state line="209" column="19" selection-start="3930" selection-end="3930" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/UserRole.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/registro/pages/_error.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="93" selection-end="93" vertical-scroll-proportion="-1.25">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Usuario.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/novatec/edocument/RegistroController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="37" selection-end="37" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/principal/datosModificacion/_usuariosModificacion.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="47" selection-start="1626" selection-end="1626" vertical-scroll-proportion="-0.7234042">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/principal/datosModificacion/_organizacionModificacion.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="53" selection-start="427" selection-end="427" vertical-scroll-proportion="0.24144869">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/principal/datosModificacion/_cuentaModificacion.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="71" selection-start="539" selection-end="539" vertical-scroll-proportion="0.14705883">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/novatec/edocument/PrincipalController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="76" selection-start="3692" selection-end="3692" vertical-scroll-proportion="0.8876405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/principal/datosCuenta/_datosCuenta.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="46" selection-start="6357" selection-end="6357" vertical-scroll-proportion="0.66101694">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/principal/_datosUsuarios.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="29" selection-start="391" selection-end="391" vertical-scroll-proportion="-4.3404255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/novatec/edocument/Plan.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="138" selection-end="138" vertical-scroll-proportion="0.2264151">
+        <state line="238" column="49" selection-start="7440" selection-end="7440" vertical-scroll-proportion="6.5867157">
           <folding />
         </state>
       </provider>

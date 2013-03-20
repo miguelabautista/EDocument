@@ -9,11 +9,11 @@
 <div id="ajaxflow">
 <af:flow name="Registro" class="ajaxFlow" commons="common" partials="pages" spinner="ajaxFlowWait" controller="[controller: 'Registro', action: 'pages']">
 	
-	<af:triggerEvent name="next" afterSuccess="onPage();" />
+	<af:triggerEvent name="next" afterSuccess="onPage();"    />
 </af:flow>
 <g:if env="development">
 <af:error class="ajaxFlowError">
-	
+
 </af:error>
 </g:if>
 </div>

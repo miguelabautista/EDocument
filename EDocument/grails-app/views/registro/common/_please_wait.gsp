@@ -2,7 +2,7 @@
 	<span class="waitBackground"></span>
 	<span class="waiter">
 		<span class="wait">
-			<span class="title">Please Wait...</span>
+			<span class="title">Por Favor Espere...</span>
 			<span class="spinner"></span>
 		</span>
 	</span>

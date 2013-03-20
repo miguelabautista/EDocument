@@ -1,4 +1,9 @@
 <af:page>
+    <button id="botoncollapseTwo" type="button" class="btn btn-danger" data-toggle="collapse" data-target="#collapseTwo"
+            style="display:none;">
+        collapseTwo
+    </button>
+
     <div class="accordion" id="accordion2">
         <div class="accordion-group">
             <div class="accordion-heading">
@@ -16,9 +21,14 @@
                             <label class="control-label" for="organizacionNombre">Organizacion</label>
 
                             <div class="controls">
-                                <g:textField name="organizacionNombre" required="" placeholder="Organizacion"
+                                <g:textField id="organizacionNombre" title="Nombre de la Organizacion"
+                                             name="organizacionNombre" oninput="corroborarCamposOrganizacion();"
+                                             required=""
+                                             placeholder="Organizacion"
                                              value="${Organizacion?.organizacionNombre}"/>
-                                <span class="help-inline">*</span>
+                                <span id="campoRequerido${hasErrors(bean: Organizacion, field: 'organizacionTelefono1', 'error')}"
+                                      title="campo Requerido" class="help-inline">*</span>
+
                             </div>
                         </div>
 
@@ -26,9 +36,17 @@
                             <label class="control-label" for="organizacionNombreCorto">Alias</label>
 
                             <div class="controls">
-                                <g:textField name="organizacionNombreCorto" required="" placeholder="Alias"
+
+                                <g:textField id="organizacionNombreCorto" title="Alias de la Organizacion"
+                                             name="organizacionNombreCorto"
+                                             oninput="corroborarCamposOrganizacion();"
+                                             required="" placeholder="Alias"
                                              value="${Organizacion?.organizacionNombreCorto}"/>
-                                <span class="help-inline">*</span>
+
+                                <span title="campo Requerido"
+                                      id="campoRequerido${hasErrors(bean: Organizacion, field: 'organizacionTelefono1', 'error')}"
+                                      class="help-inline">*</span>
+
                             </div>
                         </div>
 
@@ -36,9 +54,14 @@
                             <label class="control-label" for="organizacionRif">R.I.F</label>
 
                             <div class="controls">
-                                <g:textField name="organizacionRif" required="" placeholder="R.I.F"
+                                <g:textField id="organizacionRif" title="R.I.F de la Organizacion"
+                                             name="organizacionRif" oninput="corroborarCamposOrganizacion();"
+                                             required=""
+                                             placeholder="R.I.F"
                                              value="${Organizacion?.organizacionRif}"/>
-                                <span class="help-inline">*</span>
+                                <span title="campo Requerido"
+                                      id="campoRequerido${hasErrors(bean: Organizacion, field: 'organizacionTelefono1', 'error')}"
+                                      class="help-inline">*</span>
                             </div>
                         </div>
 
@@ -46,24 +69,46 @@
                             <label class="control-label" for="organizacionDireccion">Direccion</label>
 
                             <div class="controls">
-                                <g:textField name="organizacionDireccion" required="" placeholder="Direccion"
+                                <g:textField id="organizacionDireccion" title="Direccion de la Organizacion"
+                                             name="organizacionDireccion" oninput="corroborarCamposOrganizacion();"
+                                             required=""
+                                             placeholder="Direccion"
                                              value="${Organizacion?.organizacionDireccion}"/>
-                                <span class="help-inline">*</span>
+                                <span title="campo Requerido"
+                                      id="campoRequerido${hasErrors(bean: Organizacion, field: 'organizacionTelefono1', 'error')}"
+                                      class="help-inline">*</span>
                             </div>
                         </div>
 
 
                         <div class="control-group">
+
                             <label class="control-label" for="organizacionTelefono1">Telefono</label>
 
                             <div class="controls">
-                                <g:textField name="organizacionTelefono1" required="" placeholder="Telefono"
+
+                                <g:textField id="organizacionTelefono1" title="Telefono de la Organizacion"
+                                             oninput="corroborarCamposOrganizacion();" name="organizacionTelefono1"
+                                             required=""
+                                             placeholder="Telefono"
                                              value="${Organizacion?.organizacionTelefono1}"/>
-                                <span class="help-inline">*</span>
+
+                                <span title="campo Requerido"
+                                      id="campoRequerido${hasErrors(bean: Organizacion, field: 'organizacionTelefono1', 'error')}"
+                                      class="help-inline">*</span>
                             </div>
                         </div>
 
+                        <i id="flecha" class="icon-arrow-down icon-large" style="display:none"></i>
+                        <button id="botoncollapseOne" type="button" class="btn-mini btn-info"
+                                data-toggle="collapse"
+                                data-target="#collapseOne" style="display:none"
+                                onclick="$('#botoncollapseTwo').click();">
+                            Continuar
+                        </button>
+
                     </div>
+
                 </div>
             </div>
         </div>
@@ -86,7 +131,7 @@
                             <div class="controls">
                                 <g:textField name="nombre" required="" placeholder="Nombre"
                                              value="${Organizacion?.nombre}"/>
-                                <span class="help-inline">*</span>
+                                <span title="campo Requerido" id="campoRequerido" class="help-inline">*</span>
                             </div>
                         </div>
 
@@ -96,7 +141,7 @@
                             <div class="controls">
                                 <g:textField name="apellido" required="" placeholder="Apellido"
                                              value="${Organizacion?.apellido}"/>
-                                <span class="help-inline">*</span>
+                                <span title="campo Requerido" id="campoRequerido" class="help-inline">*</span>
                             </div>
                         </div>
 
@@ -106,7 +151,7 @@
                             <div class="controls">
                                 <g:textField name="cedula" required="" placeholder="Cedula"
                                              value="${Organizacion?.cedula}"/>
-                                <span class="help-inline">*</span>
+                                <span title="campo Requerido" id="campoRequerido" class="help-inline">*</span>
                             </div>
                         </div>
 
@@ -135,5 +180,10 @@
         </div>
     </div>
 
-    <div class="alert alert-info">* campos requeridos</div>
+    <div id="banner${hasErrors(bean: Organizacion, 'error')}" class="alert alert-alert">* <g:hasErrors
+            bean="${Organizacion}" field="organizacionDireccion">
+        <g:if test="${Organizacion.errors.getFieldError('organizacionDireccion').code} == blank ">
+            <g:message code="default.blank.message" default="Alias" args="['Direccion']"/>
+        </g:if>
+    </g:hasErrors></div>
 </af:page>

@@ -14,18 +14,17 @@ class Organizacion {
     Date dateCreated
     Plan plan
 
-
     static hasMany = [users: Usuario, pagos: Pago]
 
 
     static constraints = {
         nombre blank: false
         nombreCorto blank: false, size: 1..10
-        rif blank: false
+        rif blank: false , matches: /[gjvGJV]?-\d{8}-\d{1}/
         direccion blank:false
-        telefono blank: false, matches: /\d*/
+        telefono blank: false, matches: /0\d+/
         email email: true
-        monto blank: false
+        monto blank: false , matches: /\d*/
     }
 
     String toString() {

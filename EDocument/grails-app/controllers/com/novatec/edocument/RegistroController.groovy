@@ -6,25 +6,28 @@ class OrganizacionAndUserCommand implements Serializable {
     String organizacionRif
     String organizacionDireccion
     String organizacionTelefono1
-
+	String organizacionEmail
 
     String nombre
     String apellido
     String cedula
     String email
     String direccion
+	String telefono
 
     static constraints = {
         organizacionNombre blank: false
-        organizacionNombreCorto blank: false
-        organizacionRif blank: false
+        organizacionNombreCorto blank: false, size: 1..10
+        organizacionRif blank: false , matches: /[gjvGJV]?-\d{8}-\d{1}/
         organizacionDireccion blank: false
-        organizacionTelefono1 blank: false
+		organizacionEmail email : true
+        organizacionTelefono1 blank: false, matches: /0\d+/
 
         nombre blank: false
         apellido blank: false
-        cedula blank: false
-
+        cedula blank: false , matches: /\d{1,2}\d{3,3}\d{3,3}/
+		email email:true
+		telefono blank: false, matches: /0\d+/
     }
 }
 
@@ -132,13 +135,18 @@ class RegistroController {
             on("next") { OrganizacionAndUserCommand om ->
 
                 if (om.hasErrors()) {
+					
+					om.errors.allErrors.each{
+						println it.rejectedValue
+					}
 
                     flow.Organizacion = om
                     // or
                     //flow.errorMessages="this is an error"
 
                     return error()
-                }
+                }			
+				
                 flow.Organizacion = om
 
             }.to "pageTwo"
@@ -293,6 +301,37 @@ class RegistroController {
             }
         }
     }
+	
+	def validarRIFOrganizacion(){
+		
+		def rif = params.rif
+		
+		if(rif ==~ /[gjvGJV]/){			
+		  String a = rif
+		  rif =  a.toUpperCase() + "-"		  
+		}else if(rif ==~ /[gjvGJV]?-\d{8}/){
+			rif = rif + "-"
+		}
+       
+		render rif
+	}
+	
+	def validarCedulaUsuario(){
+		def cedula = params.cedula
+		
+		def resultado = ""
+		
+		def usuario = Usuario.findByCedula_rif(cedula)
+		
+		if(!usuario && cedula.size() >= 7){
+			render "correct"
+		}else if(usuario && cedula.size() >= 7){
+			render "notCorrect"
+		}
+		
+		render ""
+		
+	}
 
     def planSeleccionado() {
         def tipoPlan = params.plan

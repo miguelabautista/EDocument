@@ -193,4 +193,22 @@
 	width: 100%;
 	height: 48px;
 }
+
+
+#campoRequeridoerror{
+    color: RED;
+}
+
+span{
+    cursor: default;
+}
+
+#banner{
+    display:none;
+}
+#bannererror{
+    display:inline;
+}
+
+
 /** END :: please wait **/

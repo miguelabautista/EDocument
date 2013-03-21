@@ -1,31 +1,31 @@
 ================================================================
-   Compilation started at Mon Feb 25 09:07:22 VET 2013
+   Compilation started at Wed Mar 20 14:46:25 VET 2013
 ================================================================
 
 Base Dir = /home/miguel/git/EDocument/EDocument
 Compiling module com.novatec.edocument.Prueba
    Compiling 6 permutations
-      Compiling permutation 4...
-      Process output
-         Compiling
-            Compiling permutation 5...
+      Compiling permutation 2...
       Process output
          Compiling
             Compiling permutation 3...
       Process output
          Compiling
-            Compiling permutation 1...
-      Process output
-         Compiling
-            Compiling permutation 2...
-      Process output
-         Compiling
             Compiling permutation 0...
+      Process output
+         Compiling
+            Compiling permutation 5...
+      Process output
+         Compiling
+            Compiling permutation 4...
+      Process output
+         Compiling
+            Compiling permutation 1...
    Compile of permutations succeeded
 Linking into /home/miguel/git/EDocument/EDocument/web-app/gwt/com.novatec.edocument.Prueba
    Link succeeded
-   Compilation succeeded -- 17,910s
+   Compilation succeeded -- 20,938s
 ================================================================
-   Compilation finished at Mon Feb 25 09:07:41 VET 2013
+   Compilation finished at Wed Mar 20 14:46:48 VET 2013
 ================================================================
 

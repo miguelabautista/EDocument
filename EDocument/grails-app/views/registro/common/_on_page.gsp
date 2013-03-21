@@ -21,10 +21,28 @@
     function onPage() {
 
     }
+    function validarRIF(){
+		$.ajax({url:"${createLink(controller:'registro',action:'validarRIFOrganizacion')}",data:{rif:$('#organizacionRif').val()},success:function(data){
+				$('#organizacionRif').val(data);
+		}});
+		
+    }
+    function validarCedulaUsuario(){
+    	$.ajax({url:"${createLink(controller:'registro',action:'validarCedulaUsuario')}",data:{cedula:$('#nameUser').val()},success:function(data){
+        	if(data == "correct"){
+        		$('#cedulaStatus').text("");
+        		$("#cedulaStatus").html("<img src='${resource(dir: 'images/icons', file: 'accept.png', plugin: 'famfamfam')}'/>");
+           	}else if(data == "notCorrect"){
+           		$('#cedulaStatus').text("");
+        		$("#cedulaStatus").html("<img src='${resource(dir: 'images/icons', file: 'cancel.png', plugin: 'famfamfam')}'/>");
+            }
+				
+		}});
+    }
     function corroborarCamposOrganizacion() {
         var variables = $.makeArray($("#collapseOne input"));
 
-        if ($(variables[0]).val().length != 0 && $(variables[1]).val().length != 0 && $(variables[2]).val().length != 0 && $(variables[3]).val().length != 0 && $(variables[4]).val().length != 0) {
+        if ($(variables[0]).val().length != 0 && $(variables[1]).val().length != 0 && $(variables[2]).val().length != 0 && $(variables[3]).val().length != 0 && $(variables[4]).val().length != 0 && $(variables[5]).val().length != 0) {
             $("#botoncollapseOne, #flecha").removeAttr("style");
         } else {
             $("#botoncollapseOne, #flecha").attr('style','display:none');
